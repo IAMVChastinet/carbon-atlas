@@ -1,4 +1,7 @@
 :root {
+	--cds-hover-primary: var(--atlas-color-primary-b400);
+	--cds-active-primary: var(--atlas-color-primary-b500);
+
 	--cds-link-01: var(--atlas-color-primary-b400);
 	--cds-link-01-hover: var(--atlas-color-primary-b300);
 
@@ -18,7 +21,8 @@
 	/* not working? */
 	--cds-layer: red;
 	--cds-layer-hover: red;
-	--cds-spacing-03: 0;
+	/* --cds-spacing-03: 0; */
+	--cds-spacing-05: 1em;
 
 }
 bx-date-picker {
@@ -28,3 +32,15 @@ bx-date-picker {
 	--cds-field-01: var(--atlas-color-on-bg-white); /* not provided */
 	--cds-code-02-font-family: arial; /* not provided */
 }
+
+/*
+	https://github.com/cision/atlas-styles/blob/main/dist/css/scratch.css#L13
+	This bit from scratch.css is breaking the bx-data-table padding:
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+*/

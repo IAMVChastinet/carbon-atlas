@@ -47,6 +47,10 @@ atlas-input-text::part(label-wrapper) {
   padding-inline-start: 0;
 }
 
+bx-btn atlas-icon[slot=icon] {
+  color: white;
+}
+
 .atlas-form div {
   display: flex;
   gap: 0.5em;
