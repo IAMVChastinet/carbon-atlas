@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import '@cision/atlas-components'
+import 'carbon-web-components/es'
+
 import './index.css';
+import './atlas-carbon.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 

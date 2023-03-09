@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+atlas-dialog {
+  --atlas-dialog-inline-spacing: 2em;
+  --atlas-dialog-subtext-margin-block-end: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+atlas-dialog[blade]::part(body) {
+  margin-block-start: 0.5em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+atlas-application-frame::part(app-logo) {
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: #e8ff25;
+  padding: 1em;
   display: flex;
-  flex-direction: column;
+  text-align: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-shadow: 2px 6px rgba(68, 68, 68, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.atlas-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 0.5em;
+  row-gap: 0.5em;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.atlas-form .colspan {
+  grid-column: 1 / span 2;
+}
+
+atlas-input-chip-group {
+  --chips-min-height: 0;
+  --overall-margin-block-end: 0;
+}
+
+atlas-input-chip-group::part(chips-scroll-view) {
+  padding-block: 0;
+}
+
+atlas-input-chip-group::part(chips-label) {
+  padding: 1px;
+}
+
+atlas-input-text::part(label-wrapper) {
+  position: relative;
+  padding-inline-start: 0;
+}
+
+.atlas-form div {
+  display: flex;
+  gap: 0.5em;
+}
+.atlas-form atlas-dropdown {
+  --default-width: 10em;
+  --menu-margin-block-start: -0.6em;
+  align-self: flex-end;
+}
+
+.atlas-form atlas-dropdown atlas-input-text {
+  margin: 0;
+}
+.atlas-form atlas-dropdown atlas-input-text::part(helper-text) {
+  display: none;
+}
+
+.atlas-form atlas-dropdown li {
+  list-style: none;
 }

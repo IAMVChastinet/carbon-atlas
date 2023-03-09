@@ -1,0 +1,30 @@
+:root {
+	--cds-link-01: var(--atlas-color-primary-b400);
+	--cds-link-01-hover: var(--atlas-color-primary-b300);
+
+	--cds-focus: var(--atlas-color-primary-b500);
+	--cds-interactive: var(--atlas-color-primary-b500);
+
+	--cds-text-01: var(--atlas-color-primary-n400);
+	--cds-text-02: var(--atlas-color-primary-n300);
+	
+	--cds-field: var(--atlas-color-on-bg-white);
+	--cds-border-strong: var(--atlas-color-primary-n200);
+	--cds-text-placeholder: var(--atlas-color-primary-n300);
+
+	--cds-highlight: var(--atlas-color-primary-b25);
+	--cds-interactive-01: var(--atlas-color-primary-b500);
+
+	/* not working? */
+	--cds-layer: red;
+	--cds-layer-hover: red;
+	--cds-spacing-03: 0;
+
+}
+bx-date-picker {
+	--cds-body-short-01-font-weight: 600; /* not provided */
+	--cds-ui-01: var(--atlas-color-on-bg-white); /* not provided */
+	--cds-hover-ui: var(--atlas-color-on-bg-white); /* not provided */
+	--cds-field-01: var(--atlas-color-on-bg-white); /* not provided */
+	--cds-code-02-font-family: arial; /* not provided */
+}
