@@ -5,7 +5,7 @@ function CdsDataGrid({ slot }) {
 		<bx-ce-demo-data-table slot={slot} page-size="5" start="0" color-scheme="null" size="">
 			<bx-table-toolbar role="section">
 				<bx-table-toolbar-content tabindex="">
-					<bx-table-toolbar-search role="search" color-scheme="" size="sm"></bx-table-toolbar-search>
+				<atlas-search primary><atlas-icon name="loupe" slot="prefix" /></atlas-search>
 					<bx-overflow-menu role="button" tabindex="0" aria-haspopup="true" aria-expanded="false" color-scheme="" size="">
 						<atlas-icon slot="icon" name="settings" />
 

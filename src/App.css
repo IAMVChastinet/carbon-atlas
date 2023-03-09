@@ -47,7 +47,7 @@ atlas-input-text::part(label-wrapper) {
   padding-inline-start: 0;
 }
 
-bx-btn atlas-icon[slot=icon] {
+bx-btn atlas-icon[slot="icon"] {
   color: white;
 }
 
@@ -70,4 +70,9 @@ bx-btn atlas-icon[slot=icon] {
 
 .atlas-form atlas-dropdown li {
   list-style: none;
+}
+
+bx-table-toolbar-content atlas-search {
+  width: 100%;
+  align-content: center;
 }
